@@ -1,3 +1,3 @@
-import Typograms from '@/components/Typograms';
+import Typograms from '@/Typograms';
 
 export default Typograms;

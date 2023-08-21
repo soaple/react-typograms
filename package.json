@@ -1,7 +1,7 @@
 {
     "name": "react-typograms",
     "description": "Unofficial React bindings for Typograms",
-    "version": "0.3.3",
+    "version": "0.4.0",
     "main": "dist/index.js",
     "keywords": [
         "typograms",

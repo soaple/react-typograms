@@ -1,7 +1,7 @@
 {
     "name": "react-typograms",
     "description": "Unofficial React bindings for Typograms",
-    "version": "0.2.0",
+    "version": "0.3.3",
     "main": "dist/index.js",
     "keywords": [
         "typograms",
@@ -20,13 +20,22 @@
     },
     "homepage": "https://github.com/soaple/react-typograms#readme",
     "peerDependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react": ">=18"
+    },
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./package.json": "./package.json"
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "webpack",
-        "publish": "npm install && npm run build && npm publish --access public"
+        "build": "tsup src/index.ts --dts --format esm,cjs",
+        "publish:public": "rm -rf dist && npm install && npm run build && npm publish --access public"
     },
     "eslintConfig": {
         "extends": [
@@ -53,8 +62,7 @@
         "@types/react": "^18.2.20",
         "@types/react-dom": "^18.2.7",
         "babel-loader": "^9.1.3",
-        "typescript": "^4.9.5",
-        "webpack": "^5.88.2",
-        "webpack-cli": "^5.1.4"
+        "tsup": "^7.2.0",
+        "typescript": "^4.9.5"
     }
 }

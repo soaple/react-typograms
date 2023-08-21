@@ -19,11 +19,11 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
+    // "paths": {
+    //   "@/*": [
+    //     "./*"
+    //   ]
+    // },
     // For webpack
     "noEmit": false,
     "outDir": "./dist/",

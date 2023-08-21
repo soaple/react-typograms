@@ -1,3 +1,3 @@
-import Typograms from '@/Typograms';
+import Typograms from './Typograms';
 
 export default Typograms;

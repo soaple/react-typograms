@@ -38,9 +38,9 @@ module.exports = {
     // },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
-        alias: {
-            '@': path.resolve(__dirname, './src/'),
-        },
+        // alias: {
+        //     '@': path.resolve(__dirname, './src/'),
+        // },
     },
     externals: {
         // Don't bundle react or react-dom

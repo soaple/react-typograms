@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import typograms from 'lib/typograms';
+import typograms from '@/lib/typograms';
 
 interface TypogramsProps {
     content: string;
